@@ -25,7 +25,7 @@ class ApplicationController < Sinatra::Base
   
   post '/results' do
     @result = result(params[:date])
-    # @result2 = jimmy(params[:activity], params[:time], params[:price])
+    @result2 = jimmy(params[:date])
     # @result3 = pictures(params[:activity], params[:time], params[:price])
     
     erb :results
